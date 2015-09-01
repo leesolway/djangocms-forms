@@ -49,7 +49,6 @@ class FormPlugin(CMSPluginBase):
     name = settings.DJANGOCMS_FORMS_PLUGIN_NAME
     module = settings.DJANGOCMS_FORMS_PLUGIN_MODULE
     model = FormDefinition
-    cache = False
     form = FormDefinitionAdminForm
     inlines = (FormFieldInline, )
     render_template = settings.DJANGOCMS_FORMS_DEFAULT_TEMPLATE
